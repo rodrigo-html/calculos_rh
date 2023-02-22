@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Departamento Pessoal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--Menu principal-->
+    <div id="backg">
+        <button id="menu" class="menu">MENU</button>
+        <div id="logo"></div>
+        <div id="info"></div>
+    </div>
+    <div id="boxMenu" class="box">
+        <h2>Selecione o módulo</h2>
+        <hr>
+        <button id="opExtras" class="modulo">Horas extras</button>
+        <br>
+        <button id="opComissao" class="modulo">Comissão</button>
+        <br>
+    </div>
+    <!--Menu principal-->
+
+    <!--Menu horas extras-->
+    <div id="boxExtras" class="box">
+        <form action="#">
+            <fieldset>
+                <legend>Cálculo de Horas extras</legend>
+                <div class="inputBox">
+                    <label for="joranada">Horas mês:</label>
+                    <input type="number" name="jornada" id="jornada">
+                </div>
+                <br>
+                <div class="inputBox">
+                    <label for="salario">Salario Contratual:</label>
+                    <input type="number" name="salario" id="salario">
+                </div>
+                <br><br>
+                <p>Horas Totais:</p>
+                <section>
+                    <div class="inputBox">
+                        <label for="totais">Horas:</label><br>
+                        <input type="number" name="totais" id="totais">
+                    </div>
+                    <p>:</p>
+                    <div class="inputBox">
+                        <label for="minutos">Minutos:</label><br>
+                        <input type="number" name="minutos" id="minutos">
+                    </div>
+                </section>
+                <br>
+                <div class="inputBox">
+                    <label for="valor" id="valorLabel">Horas extras:</label>
+                    <br>
+                    <select name="porcentagem" id="porcentagem">
+                        <option value="50">50%</option>
+                        <option value="55">55%</option>
+                        <option value="60">60%</option>
+                        <option value="65">65%</option>
+                        <option value="70">70%</option>
+                        <option value="75">75%</option>
+                        <option value="80">80%</option>
+                        <option value="100">100%</option>
+                    </select>
+                </div>
+                <br>
+                <div id="resExtra" class="res">
+                    <label for="totalExtra">Valor:</label>
+                    <input type="text" name="totalExtra" id="totalExtra" class="total" disabled>
+                </div>
+                <input type="button" value="calcular" id="btExtra" class="bt">
+            </fieldset>
+        </form>
+    </div>
+    <!--Menu horas extras-->
+
+    <!--Menu comissão-->
+    <div id="boxComissao" class="box">
+        <form action="#">
+            <fieldset>
+                <legend>Cálculo de comissão + DSR</legend>
+                <div class="inputBox">
+                    <label for="dias">Dias mês:</label>
+                    <input type="number" name="dias" id="dias">
+                </div>
+                <br>
+                <div class="inputBox">
+                    <label for="uteis">Dias úteis:</label>
+                    <input type="number" name="uteis" id="uteis">
+                </div>
+                <br>
+                <div class="inputBox">
+                    <label for="valor" id="valorLabel">Valor Total da comissão:</label>
+                    <br>
+                    <input type="number" name="valor" id="valor">
+                </div>
+                <br>
+                <input type="button" value="calcular" id="btComissao" class="bt">
+            </fieldset>
+            <div id="resComissao" class="res">
+                <label for="dsr">Valor DSR:</label>
+                <input type="text" name="dsr" id="dsr" disabled>
+                <br>
+                <br>
+                <label for="totalComissao">Valor comissão:</label>
+                <input type="text" name="totalComissao" id="totalComissao" class="total" disabled>
+            </div>
+        </form>
+    </div>
+    <!--Menu comissão-->
+    <script src="script.js"></script>
+</body>
+</html>

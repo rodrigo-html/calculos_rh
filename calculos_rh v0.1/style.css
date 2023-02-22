@@ -1,0 +1,198 @@
+/*Gera*/
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+legend{
+    background-color: rgb(0, 0, 87);
+    color: white;
+    padding: 3px;
+    width: 80%;
+    border-radius: 6px;
+}
+#logo{
+    background-image: url(https://th.bing.com/th/id/OIP.qGiJMIQARpyQwYqjGyvQZgHaHa?pid=ImgDet&rs=1);
+    background-size: 250px;
+    background-position: 50% -90px;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 250px;
+    height: 70px;
+}
+#info{
+    width: 20%;
+    height: 100%;
+    flex-grow: 1;
+}
+.menu{
+    position: relative;
+    border: none;
+    width: 20%;
+    height: 100%;
+    background-color: #fff;
+    /*
+    background-image: linear-gradient(to bottom, #ccc, #fff); */
+    flex-grow: 1;
+    color: #024a85;
+    font-size: 12px;
+}
+.bt{
+    background-image: linear-gradient(to bottom, #060e55, #12109e);
+    border: none;
+    border-radius: 10px;
+    color: white;
+}
+h2{
+    position: relative;
+    margin-top: 2%;
+}
+/*Geral*/
+/*menu principal*/
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(26, 26, 32);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+#backg{
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    height: 70px;
+    z-index: 9;
+    display: flex;
+    justify-content: center;
+}
+#boxMenu{
+    display: block;
+}
+.box{
+    margin-top: 70px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: rgb(238, 238, 255);
+}
+.modulo{
+    margin-top: 10%;
+    padding: 10px;
+    width: 70%;
+}
+#boxExtras{
+    display: none;
+}
+/*Menu principal*/
+
+/*Menu horas extras*/
+form{
+    position: absolute;
+    border-radius: 10px;
+    border: none;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 90%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(238, 238, 255);
+}
+fieldset{
+    position: absolute;
+    height: 60%;
+    border-radius: 10px;
+    width: 80%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+#jornada{
+    position: relative;
+    left: 24px;
+}
+#jornada, #salario{
+    border: none;
+    border-bottom: 1px solid black;
+    background-color: transparent;
+}
+input{
+    text-align: center;
+}
+section{
+    display: flex;
+}
+section .inputBox{
+    width: 100%;
+}
+section p{
+    position: relative;
+    bottom: -20px;
+}
+#resExtra{
+    position: relative;
+    padding: 5px;
+    margin-bottom: 10%;
+}
+.bt{
+    display: flow-root;
+    position: absolute;
+    width: 50%;
+    bottom: 2%;
+    padding: 5px;
+    border-radius: 6px;
+    left: 50%;
+    transform: translate(-50%);
+}
+fieldset input{
+    width: 70px;
+    padding: 2px;
+}
+#totais{
+    position: relative;
+}
+select{
+    padding: 4px;
+    text-align: center;
+    background-image: linear-gradient(to bottom, #ccc, #fff);      
+}
+option{
+    text-align: center;
+    color: #000;
+}
+/*Menu comissão*/
+#boxComissao{
+    display: none;
+}
+#dias, #uteis{
+    width: 40px;
+}
+#dias{
+    position: relative;
+    left: 2px;
+}
+#resComissao{
+    position: absolute;
+    padding: 5px;
+    bottom: 50%;
+}
+#dsr{
+    position: relative;
+    left: 16px;
+}
+@media screen and (max-width:393px){
+    #resComissao{
+        width: 150px;
+    }
+    #dsr{
+        left: 0px;
+    }
+}
+.res input{
+    padding: 5px;
+}
+/*Menu comissão*/
