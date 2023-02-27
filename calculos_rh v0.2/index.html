@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Departamento Pessoal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--Menu principal-->
+    <div id="backg">
+        <button id="menu" class="menu">MENU</button>
+        <div id="logo"></div>
+        <div id="info"></div>
+    </div>
+    <div id="boxMenu" class="box">
+        <nav>
+            <button id="btAdd">+</button>
+            <h2>Selecione o módulo</h2>
+            <hr>
+        </nav>
+        <div id="paiTabelas">
+            <section id="tabelas">
+                <ul id="ulTabelas">
+                    <li>Tabelas</li>
+                    <a href="https://www.gov.br/inss/pt-br/assuntos/confira-a-nova-tabela-de-contribuicao-para-a-previdencia" target="_blank">INSS</a><br>
+                    <a href="https://th.bing.com/th/id/OIP.pZUc8k0J2mwkvBqUqbnaTwHaEJ?pid=ImgDet&rs=1" target="_blank">IRRF</a><br>
+                    <a href="https://impostoderenda2023.net.br/wp-content/uploads/2022/06/tabela-irrf-768x432.jpg" target="_blank">IRPF</a><br>
+                    <li>Convensão Coletiva</li>
+                    <a href="https://www.siemerc1.com.br/wp-content/uploads/2022/05/2022-2024-REGISTRADA.pdf" target="_blank">SIEMERC</a><br>
+                    <a href="http://wordpress-direta.s3.sa-east-1.amazonaws.com/sites/329/wp-content/uploads/2023/02/13145254/SUPERMERCADOSHIPERMERCADOS-MERCADOS-E-MINIMERCADOS-2022-2023.pdf" target="_blank">SITRO</a><br>
+                </ul>
+            </section>
+        </div>
+        <section id="center">
+            <button id="opExtras" class="modulo">Horas extras</button>
+            <button id="opComissao" class="modulo">Comissão</button>
+            <button id="opFaltas" class="modulo">Horas faltas</button>
+            <button id="opNoturno" class="modulo">Conversor de horas noturnas</button>
+        </section>
+        <p id="copy">&copy;Desenvolvido por Rodrigo L. Santos</p>
+    </div>
+    <!--Menu principal-->
+
+    <!--Menu horas extras-->
+    <div id="boxExtras" class="box">
+        <form action="#">
+            <fieldset>
+                <legend>Cálculo de Horas extras</legend>
+                <div class="inputBox">
+                    <label for="joranada">Horas mês:</label>
+                    <input type="number" name="jornada" id="jornada">
+                </div>
+                <br>
+                <div class="inputBox">
+                    <label for="salario">Salario Contratual:</label>
+                    <input type="number" name="salario" id="salario">
+                </div>
+                <br><br>
+                <p>Horas Totais:</p>
+                <section>
+                    <div class="inputBox">
+                        <label for="totais">Horas:</label><br>
+                        <input type="number" name="totais" id="totais">
+                    </div>
+                    <p>:</p>
+                    <div class="inputBox">
+                        <label for="minutos">Minutos:</label><br>
+                        <input type="number" name="minutos" id="minutos">
+                    </div>
+                </section>
+                <br>
+                <div class="inputBox">
+                    <label for="valor" id="valorLabel">Horas extras:</label>
+                    <br>
+                    <select name="porcentagem" id="porcentagem">
+                        <option value="50">50%</option>
+                        <option value="55">55%</option>
+                        <option value="60">60%</option>
+                        <option value="65">65%</option>
+                        <option value="70">70%</option>
+                        <option value="75">75%</option>
+                        <option value="80">80%</option>
+                        <option value="100">100%</option>
+                    </select>
+                </div>
+                <br>
+                <div id="resExtra" class="res">
+                    <label for="totalExtra">Valor:</label>
+                    <input type="text" name="totalExtra" id="totalExtra" class="total" disabled>
+                </div>
+                <input type="button" value="calcular" id="btExtra" class="bt">
+            </fieldset>
+        </form>
+    </div>
+    <!--Menu horas extras-->
+
+    <!--Menu comissão-->
+    <div id="boxComissao" class="box">
+        <form action="#">
+            <fieldset>
+                <legend>Cálculo de comissão + DSR</legend>
+                <div class="inputBox">
+                    <label for="dias">Dias mês:</label>
+                    <input type="number" name="dias" id="dias">
+                </div>
+                <br>
+                <div class="inputBox">
+                    <label for="uteis">Dias úteis:</label>
+                    <input type="number" name="uteis" id="uteis">
+                </div>
+                <br>
+                <div class="inputBox">
+                    <label for="valor" id="valorLabel">Valor Total da comissão:</label>
+                    <br>
+                    <input type="number" name="valor" id="valor">
+                </div>
+                <br>
+                <input type="button" value="calcular" id="btComissao" class="bt">
+            </fieldset>
+            <div id="resComissao" class="res">
+                <label for="dsr">Valor DSR:</label>
+                <input type="text" name="dsr" id="dsr" disabled>
+                <br>
+                <br>
+                <label for="totalComissao">Valor comissão:</label>
+                <input type="text" name="totalComissao" id="totalComissao" class="total" disabled>
+            </div>
+        </form>
+    </div>
+    <!--Menu comissão-->
+
+    <!--Horas noturnas-->
+    <div id="boxNoturno" class="box">
+        <form action="#">
+            <fieldset>
+                <legend>Horas noturnas</legend>
+                <div id="obs">
+                    <p>São consideradas horas noturnas todo o período laborado das 22:00 às 05:00</p>
+                    <hr>
+                    <br>
+                    <br>
+                </div>
+                <section>
+                    <div class="inputBox">
+                        <label for="horasN">Horas:</label><br>
+                        <input type="number" name="horasN" id="horasN">
+                    </div>
+                    <p>:</p>
+                    <div class="inputBox">
+                        <label for="minutosN">Minutos:</label><br>
+                        <input type="number" name="minutosN" id="minutosN">
+                    </div>
+                    <br>
+                    <div id="resNoturno" class="res">
+                        <label for="totalNoturno">Horas reais:</label>
+                        <input type="text" name="totalNoturno" id="totalNoturno" class="total" value="00:00" disabled>
+                    </div>
+                    <input type="button" value="calcular" id="btNoturno" class="bt">
+                </section>
+                <br>
+            </fieldset>
+        </form>
+    </div>
+    <!--Horas noturnas-->
+    <script src="script.js"></script>
+</body>
+</html>
