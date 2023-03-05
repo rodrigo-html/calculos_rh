@@ -1,0 +1,408 @@
+/*Gera*/
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+}
+legend{
+    position: relative;
+    top: -18px;
+    background-color: rgb(0, 0, 87);
+    color: white;
+    padding: 7px;
+    width: 80%;
+    border-radius: 6px;
+}
+#logo{
+    background-image: url(https://th.bing.com/th/id/OIP.qGiJMIQARpyQwYqjGyvQZgHaHa?pid=ImgDet&rs=1);
+    background-size: 250px;
+    background-position: 50% -90px;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 250px;
+    height: 70px;
+}
+#info{
+    width: 20%;
+    height: 100%;
+    flex-grow: 1;
+}
+.menu{
+    position: relative;
+    border: none;
+    width: 20%;
+    height: 100%;
+    background-color: #fff;
+    /*
+    background-image: linear-gradient(to bottom, #ccc, #fff); */
+    flex-grow: 1;
+    color: #024a85;
+    font-size: 12px;
+}
+.bt{
+    background-image: linear-gradient(to bottom, #060e55, #12109e);
+    border: none;
+    border-radius: 10px;
+    color: white;
+}
+nav{
+    position: relative;
+}
+#btAdd{
+    z-index: 20;
+    position: absolute;
+    right: 4px;
+    top: 50%;
+    transform: translate(0,-50%);
+    padding: 5px;
+    border: none;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h2{
+    position: relative;
+    margin: 2%;
+    color: white;
+    font-weight: lighter;
+}
+/*Geral*/
+/*menu principal*/
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(26, 26, 32);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+#backg{
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    height: 70px;
+    z-index: 9;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+#boxMenu{
+    display: block;
+    box-sizing: border-box;
+}
+.box{
+    margin-top: 70px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: rgb(2, 2, 24, 0.6);
+}
+.modulo{
+    padding: 10px;
+    width: 170px;
+    height: 170px;
+    margin-top: 10%;
+    border-radius: 20px;
+    border: none;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+}
+#center{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+#boxExtras{
+    display: none;
+}
+/*Menu principal*/
+/*Tabelas*/
+#paiTabelas{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 300px;
+}
+#tabelas{
+    display: block;/*to block*/
+    color: white;
+    position: absolute;
+    border: 3px solid rgb(0, 102, 255);
+    border-radius: 0px 0px 30px 30px;
+    background-color: rgb(1, 0, 19);
+    box-sizing: border-box;
+    width: 100%;
+    top: -100%;
+    transition: all 200ms ease-out;
+}
+li{
+    margin: 5px;
+}
+ul{
+    display: flex;/*to flex*/
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    visibility: visible;
+}
+a{  
+    display: block;
+    width: 80%;
+    padding: 5px;
+    text-decoration: none;
+    background-color: aliceblue;
+    border: none;
+}
+/*Tabelas*/
+/*Menu horas extras*/
+form{
+    position: absolute;
+    border: none;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(2, 2, 24, 0.6);
+}
+fieldset{
+    border: none;
+    position: relative;
+    margin-top: 10%;
+    height: 60%;
+    border-radius: 10px;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(238,238,255);
+}
+#jornada{
+    position: relative;
+    left: 24px;
+}
+#jornada, #salario{
+    border: none;
+    border-bottom: 1px solid black;
+    background-color: transparent;
+}
+input{
+    text-align: center;
+}
+section{
+    display: flex;
+}
+section .inputBox{
+    width: 100%;
+}
+section p{
+    position: relative;
+    bottom: -20px;
+}
+#resExtra{
+    position: relative;
+    padding: 5px;
+    margin-bottom: 10%;
+}
+.bt{
+    display: flow-root;
+    position: absolute;
+    width: 50%;
+    bottom: 2%;
+    padding: 15px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    border-radius: 6px;
+    left: 50%;
+    transform: translate(-50%);
+}
+fieldset input{
+    width: 70px;
+    padding: 2px;
+}
+#totais{
+    position: relative;
+}
+select{
+    padding: 4px;
+    text-align: center;
+    background-image: linear-gradient(to bottom, #ccc, #fff);      
+}
+option{
+    text-align: center;
+    color: #000;
+}
+/*Menu comissão*/
+#boxComissao{
+    display: none;
+}
+#dias, #uteis{
+    width: 40px;
+}
+#dias{
+    position: relative;
+    left: 2px;
+}
+#resComissao{
+    position: absolute;
+    padding: 5px;
+    bottom: 50%;
+}
+#dsr{
+    position: relative;
+    left: 16px;
+}
+@media screen and (max-width:393px){
+    #resComissao{
+        width: 150px;
+    }
+    #dsr{
+        left: 0px;
+    }
+}
+.res input{
+    padding: 5px;
+}
+/*Menu comissão*/
+
+/*Noturno*/
+#obs{
+    display: block;
+    position: relative;
+}
+#boxNoturno{
+    display: none;
+}
+#resNoturno{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+/*Noturno*/
+/*AddNoturno*/
+#boxAddNoturno{
+    display: none;
+}
+/*AddNoturno*/
+
+/*Experiência*/
+#boxExperiencia{
+    display: none;
+}
+#data{
+    width: 100px;
+}
+/*Experiência*/
+#copy{
+    display: block;
+    color: rgba(255, 255, 255, 0.13);
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+    font-size: 12px;
+}
+.total{
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 15px;
+}
+@keyframes result {
+    from{
+        font-size: 1px;
+        border: 0.1px solid black;
+    }
+    to{
+        font-size: 15px;
+        border: 1px solid black;
+    }
+}
+/*Responsividade*/
+
+@media screen and (max-width:339px) {
+    .modulo{
+        width: 140px;
+    }
+}
+@media screen and (max-width:279px) {
+    .modulo{
+        width: 120px;
+    }
+}
+@media screen and (min-width:680px) {
+    .modulo{
+        width: 200px;
+        height: 200px;
+    }
+}
+@media screen and (min-width:800px) {
+    .modulo{
+        width: 250px;
+        height: 250px;
+    }
+}
+@media screen and (max-height: 860px){
+    .modulo{
+        height: 140px;
+    }
+}
+@media screen and (max-height: 760px){
+    .modulo{
+        height: 120px;
+    }
+}
+@media screen and (max-height: 660px){
+    .modulo{
+        height: 100px;
+    }
+    #copy{
+        bottom: 12%;
+    }
+}
+@media screen and (max-height: 560px){
+    .modulo{
+        height: 80px;
+    }
+    #copy{
+        bottom: 14%;
+    }
+}
+@media screen and (max-height: 500px){
+    *{
+        font-size: 13px;
+    }
+    .modulo{
+        height: 60px;
+    }
+    #copy{
+        bottom: 16%;
+    }
+}
+@media screen and (min-width: 1366px) and (min-height:667px){
+    .modulo{
+        width: 200px;
+        height: 200px;
+    }
+    #copy{
+        bottom: 12%;
+    }
+    #resComissao{
+        bottom: 30%;
+    }
+    #resExtra{
+        margin-bottom: 5%;
+    }
+}
+
+/*Responsividade*/
